@@ -98,7 +98,7 @@ def randomly_generate_recipe(ingredients_not_owned):
     This function will read all recipes and filter out those that can be made with the given ingredients.
     """
 
-    recipes_dir = 'recipes'
+    recipes_dir = '../recipes'
     if not os.path.exists(recipes_dir):
         print("No recipes available.")
         return
@@ -124,4 +124,4 @@ def randomly_generate_recipe(ingredients_not_owned):
     selected_recipe = random.choice(available_recipes)
     print(f"Randomly selected recipe: {selected_recipe}")
 
-add_recipe()
+randomly_generate_recipe(["1"])
